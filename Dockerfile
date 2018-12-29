@@ -1,5 +1,5 @@
-FROM node:8.12
-
+FROM atlassian/default-image:2
+RUN unset NPM_CONFIG_USER
 RUN apt-get update; apt-get install -y gettext-base;
 RUN echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/chrome.list
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
