@@ -1,4 +1,4 @@
-FROM atlassian/default-image:2
+FROM node:8.12
 
 RUN apt-get update; apt-get install -y gettext-base;
 RUN echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/chrome.list
